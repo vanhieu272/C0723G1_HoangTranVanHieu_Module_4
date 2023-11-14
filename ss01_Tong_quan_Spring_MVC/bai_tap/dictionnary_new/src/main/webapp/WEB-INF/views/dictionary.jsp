@@ -21,7 +21,7 @@
     <h1>English - Vietnamese Dictionary</h1>
 </div>
 
-<form action="/" method="get" class="mt-5" style="padding: 0 500px">
+<form action="/result" method="get" class="mt-5" style="padding: 0 500px">
     <div class="input-group mb-3">
         <span class="input-group-text">Eng</span>
         <input value="${vocab}" name="vocab" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">

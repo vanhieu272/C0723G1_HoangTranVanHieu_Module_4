@@ -12,10 +12,13 @@ import java.util.Map;
 public class DictionaryController {
     @Autowired
     DictionaryService dictionaryService;
+    @GetMapping("")
+    public String showHome(){
+        return "/dictionary";
+    }
 
 
-
-    @GetMapping("/")
+    @GetMapping("/result")
     public String directory(Model model, @RequestParam(defaultValue = "") String vocab) {
         String result;
         Map<String, String> dictionaryMap = dictionaryService.getAll();

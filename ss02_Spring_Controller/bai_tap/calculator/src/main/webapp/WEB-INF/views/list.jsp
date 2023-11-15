@@ -21,8 +21,8 @@
     <h1>Calculator</h1>
     <form action="/calc" method="post">
         <div class="d-flex">
-            <input type="number" name="number1" class="mx-2">
-            <input type="number" name="number2" class="mx-2">
+            <input required type="number" name="number1" class="mx-2">
+            <input required type="number" name="number2" class="mx-2">
         </div>
         <div class="d-flex">
             <button class="btn btn-primary" name="calculation" value="+">ADDITION (+)</button>

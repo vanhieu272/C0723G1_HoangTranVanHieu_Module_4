@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d44603-c13a-4635-be6c-25ccd0e55b3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/src/main/java/com/example/controller/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/src/main/java/com/example/controller/DictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/src/main/java/com/example/th1/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/src/main/java/com/example/th1/controller/CustomerController.java" afterDir="false" />
-    </list>
+    <list default="true" id="e9d44603-c13a-4635-be6c-25ccd0e55b3c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,21 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Codegym/module4/ss02_Spring_Controller/bai_tap/calculator",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
-    "spring.configuration.checksum": "a1ea992226507238c4f2b578827a6414"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Codegym/module4/ss02_Spring_Controller/bai_tap/calculator&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a1ea992226507238c4f2b578827a6414&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codegym\module4\JSP_Spring_MVC_Template\template\src\main\webapp\WEB-INF" />
@@ -168,6 +163,7 @@
       <workItem from="1699939304157" duration="57000" />
       <workItem from="1699939372518" duration="64000" />
       <workItem from="1700032505107" duration="2360000" />
+      <workItem from="1700035255119" duration="106000" />
     </task>
     <servers />
   </component>

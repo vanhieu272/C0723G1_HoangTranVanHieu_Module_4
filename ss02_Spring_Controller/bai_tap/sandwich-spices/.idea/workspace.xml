@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d44603-c13a-4635-be6c-25ccd0e55b3c" name="Changes" comment="" />
+    <list default="true" id="e9d44603-c13a-4635-be6c-25ccd0e55b3c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/src/main/java/com/example/controller/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/bai_tap/dictionnary_new/src/main/java/com/example/controller/DictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/src/main/java/com/example/th1/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss01_Tong_quan_Spring_MVC/thuc_hanh/TH1/src/main/java/com/example/th1/controller/CustomerController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,27 +20,11 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="template" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Codegym/module4/ss02_Spring_Controller/thuc_hanh/regex_email",
+    "last_opened_file_path": "D:/File-Java/A0322I1_TuanVoDinh_CodeGym/Module_04/ss02_springController/exercises/calculator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -178,11 +167,8 @@
       <workItem from="1699936399022" duration="20000" />
       <workItem from="1699936497906" duration="12000" />
       <workItem from="1699939304157" duration="57000" />
-      <workItem from="1699939438055" duration="4768000" />
-      <workItem from="1699945909340" duration="3277000" />
-      <workItem from="1699949378179" duration="232000" />
-      <workItem from="1699959753373" duration="477000" />
-      <workItem from="1700017442258" duration="24000" />
+      <workItem from="1699939372518" duration="64000" />
+      <workItem from="1700027729546" duration="4545000" />
     </task>
     <servers />
   </component>

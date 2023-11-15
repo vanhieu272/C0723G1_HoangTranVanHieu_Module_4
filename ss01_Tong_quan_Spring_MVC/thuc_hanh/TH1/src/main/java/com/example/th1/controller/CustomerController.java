@@ -30,4 +30,5 @@ public class CustomerController {
         return "/customer/detail";
     }
 
+    
 }

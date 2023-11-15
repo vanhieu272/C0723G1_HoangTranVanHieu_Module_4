@@ -12,7 +12,7 @@ import java.util.Map;
 public class DictionaryController {
     @Autowired
     DictionaryService dictionaryService;
-    @GetMapping("")
+    @GetMapping("/")
     public String showHome(){
         return "/dictionary";
     }

@@ -29,12 +29,12 @@
         <c:if test="${emails.spamsFilter == 'true'}">
                 checked
         </c:if>
-                type="checkbox" value="${emails.spamsFilter}"></td>
+                type="checkbox" disabled value="${emails.spamsFilter}"></td>
     </tr>
     <tr>
         <th>Signature</th>
         <td>
-            <textarea>${emails.signature}</textarea>
+            <textarea disabled>${emails.signature}</textarea>
         </td>
     </tr>
 </table>

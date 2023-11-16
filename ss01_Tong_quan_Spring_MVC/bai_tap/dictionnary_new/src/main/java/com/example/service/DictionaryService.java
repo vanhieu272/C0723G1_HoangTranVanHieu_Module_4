@@ -15,4 +15,8 @@ public class DictionaryService {
     public Map<String, String> getAll(){
         return dictionaryRepository.getAll();
     }
+
+    public String search(String vocab){
+        return dictionaryRepository.search(vocab);
+    }
 }

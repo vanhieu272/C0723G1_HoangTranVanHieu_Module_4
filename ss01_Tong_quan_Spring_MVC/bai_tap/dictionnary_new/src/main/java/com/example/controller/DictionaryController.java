@@ -11,7 +11,7 @@ import java.util.Map;
 @Controller
 public class DictionaryController {
     @Autowired
-    DictionaryService dictionaryService;
+    private DictionaryService dictionaryService;
     @GetMapping("/")
     public String showHome(){
         return "/dictionary";
@@ -20,14 +20,7 @@ public class DictionaryController {
 
     @GetMapping("/result")
     public String directory(Model model, @RequestParam(defaultValue = "") String vocab) {
-        String result;
-        Map<String, String> dictionaryMap = dictionaryService.getAll();
-        vocab = vocab.toLowerCase().trim();
-        result = dictionaryMap.get(vocab);
-
-        if(result == null){
-            result = "Sorry, we couldn't find this word!!";
-        }
+        String result =  dictionaryService.search(vocab);
         model.addAttribute("vocab", vocab);
         model.addAttribute("result", result);
         return "/dictionary";

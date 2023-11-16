@@ -17,27 +17,11 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="template" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -77,6 +61,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codegym\module4\JSP_Spring_MVC_Template\template\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codegym\module4\ss04_Data_Binding_and_Form\thuc_hanh\spring-form-tutorial\src\main\webapp\WEB-INF\views\employee" />
     </key>
   </component>
   <component name="RunManager">
@@ -180,13 +167,10 @@
       <workItem from="1699936399022" duration="20000" />
       <workItem from="1699936497906" duration="12000" />
       <workItem from="1699939304157" duration="57000" />
-      <workItem from="1699939438055" duration="4768000" />
-      <workItem from="1699945909340" duration="3277000" />
-      <workItem from="1699949378179" duration="232000" />
-      <workItem from="1699959753373" duration="477000" />
-      <workItem from="1700017442258" duration="24000" />
-      <workItem from="1700104888718" duration="65000" />
-      <workItem from="1700105171307" duration="984000" />
+      <workItem from="1699939372518" duration="64000" />
+      <workItem from="1700078372087" duration="3167000" />
+      <workItem from="1700082400098" duration="12000" />
+      <workItem from="1700084431321" duration="641000" />
     </task>
     <servers />
   </component>

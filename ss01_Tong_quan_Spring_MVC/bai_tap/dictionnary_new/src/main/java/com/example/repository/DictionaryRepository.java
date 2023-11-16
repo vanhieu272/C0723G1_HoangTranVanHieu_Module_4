@@ -24,4 +24,15 @@ public class DictionaryRepository {
     public Map<String, String> getAll(){
         return dictionaryMap;
     }
+
+    public String search(String vocab){
+        Map<String, String> dictionaryMap = DictionaryRepository.dictionaryMap;
+        String result = null;
+        vocab = vocab.toLowerCase().trim();
+        result = dictionaryMap.get(vocab);
+        if(result == null){
+            result = "Sorry, we couldn't find this word!!";
+        }
+        return result;
+    }
 }

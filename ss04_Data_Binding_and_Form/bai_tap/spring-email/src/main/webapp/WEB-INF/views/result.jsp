@@ -38,5 +38,8 @@
         </td>
     </tr>
 </table>
+<a href="/">
+    Back
+</a>
 </body>
 </html>

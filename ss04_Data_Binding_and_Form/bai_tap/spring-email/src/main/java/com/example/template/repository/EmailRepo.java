@@ -12,7 +12,7 @@ public class EmailRepo implements IEmailRepo{
     private static List<String> languagesList  = new ArrayList<>();
     private static List<Integer> pages = new ArrayList<>();
     static {
-        emailList.add(new Email(1, "Chinese", 25, false, "Thor"));
+        emailList.add(new Email(1, "Chinese", 25, true, "Thor"));
 
         languagesList.add("English");
         languagesList.add("Vietnamese");

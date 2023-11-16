@@ -25,7 +25,7 @@
         <tr>
             <th>Languages</th>
             <td>
-                <form:select path="languages" value="${email.languages}">
+                <form:select path="languages" itemValue="${email.languages}">
                     <form:options items="${languagesList}" />
                 </form:select>
             </td>
@@ -57,5 +57,6 @@
         </tr>
     </table>
 </form:form>
+
 </body>
 </html>

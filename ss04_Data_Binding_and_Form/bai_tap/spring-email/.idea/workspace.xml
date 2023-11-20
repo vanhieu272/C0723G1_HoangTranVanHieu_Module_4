@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d44603-c13a-4635-be6c-25ccd0e55b3c" name="Changes" comment="" />
+    <list default="true" id="e9d44603-c13a-4635-be6c-25ccd0e55b3c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../JSP_Spring_MVC_Template/template/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,21 +57,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Codegym/module4/ss04_Data_Binding_and_Form/bai_tap/spring-email&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a1ea992226507238c4f2b578827a6414&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Codegym/module4/JSP_Spring_MVC_Template/template_thymeleaf_spring",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "spring.configuration.checksum": "a1ea992226507238c4f2b578827a6414"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Codegym\module4\JSP_Spring_MVC_Template\template\src\main\webapp\WEB-INF" />
@@ -166,7 +182,8 @@
       <workItem from="1700085076872" duration="3141000" />
       <workItem from="1700097001599" duration="3542000" />
       <workItem from="1700106107921" duration="95000" />
-      <workItem from="1700106481855" duration="3275000" />
+      <workItem from="1700106481855" duration="3444000" />
+      <workItem from="1700113262078" duration="424000" />
     </task>
     <servers />
   </component>

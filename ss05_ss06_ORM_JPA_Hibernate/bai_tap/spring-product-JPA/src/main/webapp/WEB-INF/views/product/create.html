@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//    id, tên sản phẩm, giá sản phẩm, mô tả của sản phẩm, nhà sản xuất-->
+  <form action="/product/save" method="post" th:object="${product}">
+    <table class="table table-primary table-striped">
+<!--      <input hidden th:field="*{id}">-->
+
+      <tr>
+        <td><label for="name">Product's name:</label></td>
+          <td><input id="name" th:field="*{name}"/></td>
+      </tr>
+
+        <tr>
+            <td><label for="price">Price:</label></td>
+            <td><input id="price" th:field="*{price}"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="des">Description:</label></td>
+            <td><input id="des" th:field="*{description}"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="manu">Manufacturer:</label></td>
+            <td><input id="manu" th:field="*{manufacturer}"/></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button type="submit" class="btb-success">Submit</button></td>
+        </tr>
+
+    </table>
+  </form>
+<a href="/product"><button class="btn-primary my-3">Back</button></a>
+</body>
+</html>

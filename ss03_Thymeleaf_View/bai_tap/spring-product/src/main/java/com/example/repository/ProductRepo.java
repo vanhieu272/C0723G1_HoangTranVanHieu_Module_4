@@ -8,14 +8,7 @@ import java.util.List;
 
 @Repository
 public class ProductRepo implements IProductRepo{
-//    private int id;
-//
-//    private String name;
-//    private int price;
-//
-//    private String description;
-//
-//    private String manufacturer;
+
     private static List<Product> products;
     static {
         products = new ArrayList<>();

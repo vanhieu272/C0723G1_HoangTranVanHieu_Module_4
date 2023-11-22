@@ -27,7 +27,7 @@ public class ProductRepo implements IProductRepo {
     @Override
     public List<Product> getAll() {
         List<Product> products = new ArrayList<>();
-        TypedQuery<Product> query = entityManager.createQuery("from Product", Product.class);
+        TypedQuery<Product> query = entityManager.createQuery("select p from Product p", Product.class);
         products = query.getResultList();
         return products;
     }

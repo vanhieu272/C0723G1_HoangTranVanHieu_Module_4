@@ -39,7 +39,7 @@
                     <td th:text="${book.quantity}"></td>
                 </tr>
             </table>
-            <a th:if="${book.quantity > 0}" th:href="@{/loan/create/{id}(id=${book.id})}"><button class="btn-primary rounded-pill">Mượn sách</button></a>
+            <a th:if="${book.quantity > 0}" th:href="@{/book/borrow/{id}(id=${book.id})}"><button class="btn-primary rounded-pill">Mượn sách</button></a>
             <p th:if="${book.quantity == 0}" class="text-danger ">Rất tếc, sách này hiện không còn cuốn nào trong kho :(</p>
         </div>
     </div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<header th:replace="/layout::header"></header>
+    <div class="row bg-light my-1 mx-5 p-0 " style="height: 100vh">
+        <div class="col-4 py-0 ps-0 pe-3">
+            <img height="210" width="100%" th:src="${book.img}" class="rounded mx-auto d-block">
+        </div>
+
+        <div class="col-8 p-0">
+            <table class="table table-striped">
+                <tr>
+                    <td>
+                        Tên sách:
+                    </td>
+                    <td th:text="${book.name}"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Tác giả:
+                    </td>
+                    <td th:text="${book.author}"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Nội dung:
+                    </td>
+                    <td th:text="${book.summary}"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Số lượng:
+                    </td>
+                    <td th:text="${book.quantity}"></td>
+                </tr>
+            </table>
+            <a th:if="${book.quantity > 0}" th:href="@{/loan/create/{id}(id=${book.id})}"><button class="btn-primary rounded-pill">Mượn sách</button></a>
+            <p th:if="${book.quantity == 0}" class="text-danger ">Rất tếc, sách này hiện không còn cuốn nào trong kho :(</p>
+        </div>
+    </div>
+<footer th:insert="/layout::footer"></footer>
+</body>
+</html>

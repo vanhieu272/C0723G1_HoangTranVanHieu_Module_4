@@ -10,11 +10,23 @@
     <button type="button" class="btn btn-primary" id="liveToastBtn">Thêm mới</button>
 </a>
 
-<div class="notify">
-    <div th:if="${success}">
-        <span th:text="${success}"></span>
+<!--<div class="notify">-->
+<!--    <div th:if="${success}">-->
+<!--        <span th:text="${success}"></span>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div th:block th:if="${success}">
+    <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" th:text="${success}">
+
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
     </div>
 </div>
+
 
 <table class="table table-striped">
     <tr th:each="blog,status : ${blogList}">
@@ -23,6 +35,9 @@
         </td>
         <td>
             <a th:href="@{/blog/detail(id=${blog.getId()})}" th:text="${blog.name}"></a>
+        </td>
+        <td th:text="${blog.category.getName()}">
+
         </td>
         <td>
             <a th:href="@{/blog/edit(id=${blog.getId()})}">
@@ -74,6 +89,12 @@
         let name = element.getAttribute('data-name');
         document.getElementById("name").innerHTML = name;
         document.getElementById("id").value = id;
+    }
+</script>
+
+<script>
+    function submitForm() {
+        document.getElementById("filterForm").submit();
     }
 </script>
 <!--=======================================================================================-->

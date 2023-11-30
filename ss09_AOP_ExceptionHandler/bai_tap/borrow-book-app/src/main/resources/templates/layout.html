@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:fragment="head">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Album example · Bootstrap v5.1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <script>
+    function displayToast(message, color) {
+      document.getElementById("toastContent").innerHTML = message;
+      document.getElementById("liveToast").style.background = color;
+      let myAlert = document.getElementById('liveToast');//select id of toast
+      let bsAlert = new bootstrap.Toast(myAlert);//inizialize it
+      bsAlert.show();//show it
+    }
+  </script>
+
+</head>
+<body>
+<header th:fragment="header">
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Về chúng tôi</h4>
+          <p class="text-muted"><i>"Tiệm sách của Híu"</i> là một trang web quản lý mượn sách miễn phí được phát triển bởi Hiếu Hoàng</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Liên hệ</h4>
+          <ul class="list-unstyled">
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCD4HBcHbWV1ryi9MewMF-Hw" class="text-white">Youtube</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/dev.hisu" class="text-white">Facebook</a></li>
+            <li><a target="_blank" href="https://mail.google.com" class="text-white">Email: hoangtranvanhieu@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex align-items-center ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+          <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+        </svg>
+        <strong style="margin-left: 8px">Tiệm sách của Híu</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h4 style="color: darkred" th:if="${bookList.isEmpty()}">Không có gì để hiển thị :(</h4>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col" th:each="book : ${bookList}">
+          <div class="card shadow-sm">
+            <img width="100%" height="225" th:src="${book.img}">
+            <h5 class="card-title ms-3" th:text="${book.name}"></h5>
+            <div class="card-body">
+              <p class="card-text" th:text="${book.summary}"></p>
+              <p class="card-text fst-italic" th:text="${book.author}"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Chi tiết</button>
+                </div>
+                <small th:text="'Số lượng: ' + ${book.quantity}" class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer th:fragment="footer" class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Trở lại đầu trang</a>
+    </p>
+    <p class="mb-1">Website thuộc quyền sở hữu &copy; Hiếu Hoàng, mã nguồn mở và là dự án phi lợi nhuận</p>
+    <p class="mb-0">Lần đầu đến với tiệm sách nhỏ của chúng tôi? đọc hướng dẫn  <a href="#">tại đây</a>.</p>
+  </div>
+</footer>
+
+<!--TOAST-->
+
+
+<div class="position-fixed top-0 end-5 p-3" style="z-index: 11;margin-left: 500px">
+  <div id="liveToast" style="width: 230px; color: white; background:lightgreen ;border-radius:2% 2%;" class="toast"
+       role="dialog" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="30px" height="30px">
+        <g id="surface1_4_">
+          <path style="fill:#4CAF50;"
+                d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"/>
+          <path style="fill:#CCFF90;"
+                d="M34.602,14.602L21,28.199l-5.602-5.598l-2.797,2.797L21,33.801l16.398-16.402L34.602,14.602z"/>
+        </g>
+      </svg>
+      <span id="toastContent">Nội dung hiển thị</span>
+    </div>
+  </div>
+</div>
+
+<input hidden id="mess" th:value="${mess}">
+<script th:if="${mess}">
+  displayToast(document.getElementById("mess").value, "green")
+</script>
+
+</body>
+</html>

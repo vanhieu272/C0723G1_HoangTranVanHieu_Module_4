@@ -20,6 +20,19 @@
         </tr>
 
         <tr>
+            <td>
+                <label for="cate">Thể loại:</label>
+            </td>
+            <td>
+                <select id="cate" th:field="*{category}" >
+                    <option th:each="cate:${categoryList}" th:value="${cate.getId()}"  th:text="${cate.getName()}">
+
+                    </option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
             <td></td>
             <td>
                 <button type="submit" class="btn btn-primary" id="liveToastBtn">Xác nhận</button>

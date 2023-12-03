@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api")
 public class RestBlogController {
@@ -66,7 +67,7 @@ public class RestBlogController {
     public ResponseEntity<Page<Blog>> getPage(@RequestParam(defaultValue = "") String searchName,
                                               @RequestParam(defaultValue = "0") int page,
                                               @RequestParam(defaultValue = "0") int idCate) {
-        Pageable pageable = PageRequest.of(page, 3, Sort.by("date").descending());
+        Pageable pageable = PageRequest.of(page, 2);
         Page<Blog> blogPage;
         if (idCate == 0) {
             blogPage = blogService.displayAllBlog(searchName, pageable);
